@@ -1,0 +1,116 @@
+/* poppins-fonts */
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+}
+
+/* poppins-500 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2');
+}
+
+/* poppins-600 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*-------------------- 
+  custom properties 
+--------------------*/
+:root {
+    --primary-color: #289BDE;
+    --secondary-color: #FFFFFF;
+
+    --primary-text-color: #1D1D1D;
+    --secondary-text-color: #4A4A4A;
+    --regular-text-color: #777777;
+
+    --section-title-fs: 45px;
+    --item-title-fs: 25px;
+
+    --fw-m: 500;
+    --fw-sb: 600;
+
+    /* --trans-background-color: background-color .3s, color .3s; */
+}
+/*-------------------- 
+  preset properties 
+--------------------*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--regular-text-color);
+    background: none repeat scroll 0 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+input {
+    outline: none;
+}
+
+input::placeholder {
+    font: inherit;
+}
+
+h2,h3, h4 {
+    font-weight: var(--fw-sb);
+}
+
+h2 {
+    font-size: 4rem;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-size: var(--section-title-fs);
+    color: var(--primary-text-color);
+}
+
+h4 {
+    font-size: var(--item-title-fs);
+    color: var(--secondary-text-color);
+}
+/*--------------------   
+  * REUSABLE CLASSES 
+---------------------*/
+.craft-btn {
+    border-radius: 3%;
+    font-size: 20px;
+    font-weight: var(--fw-sb);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
