@@ -42,7 +42,7 @@
     --secondary-text-color: #4A4A4A;
     --regular-text-color: #777777;
 
-    --section-title-fs: 35px;
+    /* --section-title-fs: 45px; */
     --item-title-fs: 22px;
 
     --fw-m: 500;
@@ -100,7 +100,6 @@ h2 {
 }
 
 h3 {
-    font-size: var(--section-title-fs);
     color: var(--primary-text-color);
 }
 
@@ -130,7 +129,6 @@ h4 {
     background-color: #FFFFFF;
     border: 1px solid #289BDE;
 }
-
 
 /*==================================================
                 header start
@@ -187,6 +185,7 @@ h4 {
 .carousel-content p {
     color: #FFFFFF;
 }
+
 /*==================================================
                 header end
 ==================================================*/
@@ -195,7 +194,8 @@ h4 {
 /*==================================================
                 courses start
 ==================================================*/
-.courses {
+.courses,
+.about {
     margin: 110px 0 130px;
 }
 
@@ -222,6 +222,29 @@ h4 {
     font-weight: var(--fw-sb);
     color: var(--primary-color);
 }
+
 /*==================================================
                 courses end
 ==================================================*/
+.about {
+    background-color: #F4FAFD;
+}
+
+.about-image {
+    flex: 0 0 45%;
+}
+
+.about-content {
+    flex: 1;
+}
+
+/* Tablet */
+/* Checking Size: 800px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    p.about-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
