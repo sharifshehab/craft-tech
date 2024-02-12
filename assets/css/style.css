@@ -247,4 +247,16 @@ h4 {
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
+
+    h2 {
+        font-size: calc(1.775rem + 2vw);
+    }
+}
+
+/* Mobile */
+/* Checking Size: 400px */
+@media only screen and (max-width: 767px) {
+    h2 {
+        font-size: calc(1.475rem + 1.5vw);
+    }
 }
