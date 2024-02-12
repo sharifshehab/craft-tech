@@ -42,8 +42,8 @@
     --secondary-text-color: #4A4A4A;
     --regular-text-color: #777777;
 
-    --section-title-fs: 45px;
-    --item-title-fs: 25px;
+    --section-title-fs: 35px;
+    --item-title-fs: 22px;
 
     --fw-m: 500;
     --fw-sb: 600;
@@ -114,7 +114,7 @@ h4 {
 ---------------------*/
 .craft-btn,
 .craft-register-btn {
-    border: none;
+    border: 1px solid #289BDE;
     padding: 13px 33px;
     border-radius: 4px;
     text-transform: capitalize;
@@ -128,6 +128,7 @@ h4 {
 .craft-btn:hover {
     color: var(--primary-color);
     background-color: #FFFFFF;
+    border: 1px solid #289BDE;
 }
 
 
@@ -188,4 +189,39 @@ h4 {
 }
 /*==================================================
                 header end
+==================================================*/
+
+
+/*==================================================
+                courses start
+==================================================*/
+.courses {
+    margin: 110px 0 130px;
+}
+
+.card-image {
+    flex: 0 0 30%;
+}
+
+.card-image img {
+    width: 100%;
+}
+
+.card-body {
+    flex: 1;
+}
+
+.card-title {
+    font-size: var(--item-title-fs);
+    font-weight: var(--fw-sb);
+    color: var(--secondary-text-color);
+}
+
+.card-price {
+    font-size: 18px;
+    font-weight: var(--fw-sb);
+    color: var(--primary-color);
+}
+/*==================================================
+                courses end
 ==================================================*/
