@@ -258,14 +258,8 @@ h4 {
     padding: 80px 100px;
 }
 
-.cta-content {
-    flex: 0 0 55%;
+.cta-content, .cta-content h3 {
     color: var(--secondary-color);
-}
-
-.cta-content h3 {
-    color: var(--secondary-color);
-
 }
 
 .cta a {
@@ -276,21 +270,8 @@ h4 {
 .cta a:hover {
     color: var(--primary-text-color);
 }
-
 /*==================================================
                 cta end
-==================================================*/
-
-
-/*==================================================
-                student start
-==================================================*/
-.student-header {
-    width: 50%;
-}
-
-/*==================================================
-                student end
 ==================================================*/
 
 
@@ -327,8 +308,4 @@ h4 {
         padding: 50px;
     }
 
-    /* student section */
-    .student-header {
-        width: 100%;
-    }
 }
