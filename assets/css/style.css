@@ -261,13 +261,22 @@ h4 {
     color: var(--secondary-color);
 }
 
-.cta a {
+.cta button {
     color: var(--primary-color);
     background: var(--secondary-color);
 }
 
-.cta a:hover {
+.cta button:hover {
     color: var(--primary-text-color);
+}
+
+.modal-header, .modal-body {
+    color: var(--primary-text-color);
+}
+
+.modal-footer .send {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 /*==================================================
