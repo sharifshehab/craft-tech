@@ -195,7 +195,8 @@ h4 {
                 courses start
 ==================================================*/
 .courses,
-.about {
+.about,
+.cta {
     margin: 110px 0 130px;
 }
 
@@ -226,6 +227,11 @@ h4 {
 /*==================================================
                 courses end
 ==================================================*/
+
+
+/*==================================================
+                about start
+==================================================*/
 .about {
     background-color: #F4FAFD;
 }
@@ -238,9 +244,55 @@ h4 {
     flex: 1;
 }
 
-/* Tablet */
+/*==================================================
+                about end
+==================================================*/
+
+
+/*==================================================
+                cta start
+==================================================*/
+.cta {
+    background: var(--primary-color);
+    padding: 80px 100px;
+}
+
+.cta-content {
+    flex: 0 0 55%;
+    color: var(--secondary-color);
+}
+
+.cta-content h3 {
+    color: var(--secondary-color);
+
+}
+
+.cta a {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}
+
+.cta a:hover {
+    color: var(--primary-text-color);
+}
+
+/*==================================================
+                cta end
+==================================================*/
+
+
+
+
+
+
+/* ----------------- Tablet ----------------- */
 /* Checking Size: 800px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    h2 {
+        font-size: calc(1.775rem + 2vw);
+    }
+
+    /* about section */
     p.about-text {
         display: -webkit-box;
         -webkit-line-clamp: 3;
@@ -248,15 +300,17 @@ h4 {
         overflow: hidden;
     }
 
-    h2 {
-        font-size: calc(1.775rem + 2vw);
-    }
 }
 
-/* Mobile */
+/* ----------------- Mobile ----------------- */
 /* Checking Size: 400px */
 @media only screen and (max-width: 767px) {
     h2 {
         font-size: calc(1.475rem + 1.5vw);
+    }
+
+    /* cta section */
+    .cta {
+        padding: 50px;
     }
 }
