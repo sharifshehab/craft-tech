@@ -132,10 +132,12 @@ h4 {
     background-color: #FFFFFF;
     border: 1px solid #289BDE;
 }
+
 .FW {
     font-family: FontAwesome;
     font-style: normal;
 }
+
 /*==================================================
                 header start
 ==================================================*/
@@ -204,7 +206,9 @@ h4 {
 .about,
 .cta,
 .student,
-.feedback, .faq, .partner {
+.feedback,
+.faq,
+.partner {
     margin: 110px 0 130px;
 }
 
@@ -243,6 +247,7 @@ h4 {
 .about {
     background-color: #F4FAFD;
 }
+
 /*==================================================
                 about end
 ==================================================*/
@@ -270,7 +275,8 @@ h4 {
     color: var(--primary-text-color);
 }
 
-.modal-header, .modal-body {
+.modal-header,
+.modal-body {
     color: var(--primary-text-color);
 }
 
@@ -295,8 +301,34 @@ h4 {
 .stars .bi-star-fill {
     color: #FBBF24;
 }
+
 .stars .bi-star {
     color: #FCD34D;
+}
+
+.feedback-slider .carousel-control-next,
+.feedback-slider .carousel-control-prev {
+    color: var(--primary-color);
+    background: #E5F6FF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    opacity: inherit;
+    transition: var(--trans-background-color);
+}
+
+.feedback-slider .carousel-control-prev:hover, .feedback-slider .carousel-control-next:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.feedback-slider .carousel-control-prev {
+    left: -20px;
+}
+
+.feedback-slider .carousel-control-next {
+    right: -20px;
 }
 /*==================================================
                 feedback end
@@ -311,9 +343,11 @@ h4 {
     font-weight: var(--fw-sb);
     background: #eaf5fc;
 }
+
 .accordion-body p {
     color: var(--regular-text-color);
 }
+
 /*==================================================
                 faq end
 ==================================================*/
@@ -328,7 +362,8 @@ footer {
     color: var(--secondary-color)
 }
 
-footer h3, footer p {
+footer h3,
+footer p {
     color: var(--secondary-color)
 }
 
@@ -338,9 +373,11 @@ footer h3, footer p {
     color: var(--secondary-color);
     transition: var(--trans-background-color);
 }
+
 .social-accounts a:hover {
     background: #242424bb;
 }
+
 /*==================================================
                 footer  end
 ==================================================*/
