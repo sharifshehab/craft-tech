@@ -1,3 +1,6 @@
+/* Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 /* poppins-fonts */
 @font-face {
     font-display: swap;
@@ -160,7 +163,7 @@ h4 {
 
 /*----------------- slider -----------------*/
 /* image */
-.carousel-item::before {
+.slider .carousel-item::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -197,7 +200,8 @@ h4 {
 .courses,
 .about,
 .cta,
-.student {
+.student,
+.feedback, .faq, .partner {
     margin: 110px 0 130px;
 }
 
@@ -249,7 +253,8 @@ h4 {
     padding: 80px 100px;
 }
 
-.cta-content, .cta-content h3 {
+.cta-content,
+.cta-content h3 {
     color: var(--secondary-color);
 }
 
@@ -261,11 +266,61 @@ h4 {
 .cta a:hover {
     color: var(--primary-text-color);
 }
+
 /*==================================================
                 cta end
 ==================================================*/
 
 
+/*==================================================
+                feedback start
+==================================================*/
+.feedbacks p,
+.feedbacks span {
+    color: var(--regular-text-color);
+}
+
+.stars .bi-star-fill {
+    color: #FBBF24;
+}
+.stars .bi-star {
+    color: #FCD34D;
+}
+/*==================================================
+                feedback end
+==================================================*/
+
+
+/*==================================================
+                faq start
+==================================================*/
+.faqs .accordion-header button {
+    color: var(--secondary-text-color);
+    font-weight: var(--fw-sb);
+    background: #eaf5fc;
+}
+.accordion-body p {
+    color: var(--regular-text-color);
+}
+/*==================================================
+                faq end
+==================================================*/
+
+
+/*==================================================
+                footer start
+==================================================*/
+footer {
+    padding: 120px 0;
+    background-color: #161616;
+    color: var(--secondary-color)
+}
+footer h3, footer p {
+    color: var(--secondary-color)
+}
+/*==================================================
+                footer  end
+==================================================*/
 
 
 
